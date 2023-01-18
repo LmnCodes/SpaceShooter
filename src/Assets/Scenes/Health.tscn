@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/heart.png" type="Texture" id=1]
+[ext_resource path="res://src/Assets/Scripts/Health.gd" type="Script" id=2]
+[ext_resource path="res://src/Assets/Scenes/HealthBar2D.tscn" type="PackedScene" id=3]
+
+[node name="Health" type="Sprite3D"]
+transform = Transform( 0.092, 0, 0, 0, 0.09, 0, 0, 0, 1, 0.00881529, -2.38419e-07, 0.0109258 )
+opacity = 0.54
+billboard = 1
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 200, 26 )
+transparent_bg = true
+usage = 0
+render_target_v_flip = true
+
+[node name="HealthBar2D" parent="Viewport" instance=ExtResource( 3 )]

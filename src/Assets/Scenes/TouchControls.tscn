@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[node name="TouchControls" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 23.0
+margin_top = -60.0
+margin_right = -717.0
+margin_bottom = -486.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LeftButton" type="TouchScreenButton" parent="."]
+light_mask = 0
+position = Vector2( 90, 709 )
+scale = Vector2( 2.82813, 2.70312 )
+normal = ExtResource( 1 )
+shape = SubResource( 1 )
+shape_visible = false
+action = "ui_left"
+visibility_mode = 1
+
+[node name="RightButton" type="TouchScreenButton" parent="."]
+show_behind_parent = true
+light_mask = 0
+position = Vector2( 1029, 665 )
+scale = Vector2( 2.76562, 2.0625 )
+normal = ExtResource( 1 )
+shape = SubResource( 1 )
+passby_press = true
+action = "ui_right"
+visibility_mode = 1
+
+[node name="Fire" type="TouchScreenButton" parent="."]
+light_mask = 0
+position = Vector2( 84, 509 )
+scale = Vector2( 3.17187, 2.9375 )
+normal = ExtResource( 1 )
+shape = SubResource( 1 )
+action = "Fire"
+visibility_mode = 1

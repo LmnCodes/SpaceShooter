@@ -1,0 +1,17 @@
+.DS_Store
+*.import
+
+# Godot 4+ specific ignores
+.godot/
+
+# Export presets (contains sensitive information)
+export_presets.cfg
+
+# Common OS-generated files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+bin/
+
+src/Assets/Scenes/AllSkyFree

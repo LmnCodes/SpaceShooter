@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/Assets/Scripts/BulletEnemy.gd" type="Script" id=1]
+[ext_resource path="res://src/Assets/SpaceShooter/explosion.wav" type="AudioStream" id=2]
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="SphereMesh" id=4]
+material = SubResource( 5 )
+
+[sub_resource type="SphereShape" id=6]
+
+[node name="BulletEnemy" type="KinematicBody" groups=["EnemyBullet"]]
+script = ExtResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = SubResource( 4 )
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource( 2 )
+unit_db = 28.32
+
+[node name="CollisionShape" type="CollisionShape" parent="." groups=["EnemyBullet"]]
+shape = SubResource( 6 )
+
+[node name="Area" type="Area" parent="."]

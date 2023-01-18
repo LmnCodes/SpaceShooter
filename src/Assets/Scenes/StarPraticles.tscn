@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+spread = 0.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 19.81
+anim_speed = 6.33
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.854902, 1, 0.0352941, 1 )
+
+[sub_resource type="PrismMesh" id=3]
+material = SubResource( 2 )
+size = Vector3( 0.5, 0.5, 0.5 )
+
+[node name="StarPraticles" type="Spatial"]
+
+[node name="Particles" type="Particles" parent="."]
+transform = Transform( 1, 0, -4.37114e-08, -4.37114e-08, 1.91069e-15, -1, 0, 1, 1.91069e-15, 0, 0, 0 )
+visibility_aabb = AABB( -20.5988, -42.7789, -40.8708, 41.1976, 85.5578, 81.7416 )
+process_material = SubResource( 1 )
+draw_pass_1 = SubResource( 3 )
