@@ -15,7 +15,7 @@ A simple 2D shooter game built using **Godot** (GDScript).
 - [How to Play](#how-to-play)  
 - [Roadmap / Future Improvements](#roadmap--future-improvements)  
 - [Contributing](#contributing)  
-- [License](#license)
+- [License](LICENSE.md)
 
 ---
 
