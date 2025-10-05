@@ -43,7 +43,8 @@ Here are some of the features (you can update / add):
 
 ## Demo / Screenshots
 
-_(Include screenshots, GIFs or a video of the gameplay)_
+![Main Screenshot](docs/images/main.png)
+
 
 
 ---
@@ -64,3 +65,9 @@ _(Include screenshots, GIFs or a video of the gameplay)_
    cd SpaceShooter
    ```
 
+2. Download the free resources of
+   [AllSkyFree](https://godotengine.org/asset-library/asset/579) and put in src/Assets/Scenes
+
+3. Open with GoDot
+
+4. Click the Play button
